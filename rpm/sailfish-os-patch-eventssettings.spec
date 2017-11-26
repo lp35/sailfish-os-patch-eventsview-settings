@@ -8,7 +8,7 @@ License: GPLv2
 URL: https://github.com/lp35/sailfish-os-patch-eventsview-settings
 Source0: %{name}-%{version}.tar.xz
 Requires: patchmanager
-Requires: sailfish-version >= 2.1.3.7
+Requires: sailfish-version >= 2.1.3
 
 %description
 %{summary}
