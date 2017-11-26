@@ -1,0 +1,25 @@
+--- /usr/share/lipstick-jolla-home-qt5/eventsview/EventsView.qml.orig	2017-11-26 16:45:34.510592790 +0100
++++ /usr/share/lipstick-jolla-home-qt5/eventsview/EventsView.qml	2017-11-26 16:45:55.102429510 +0100
+@@ -354,7 +354,7 @@
+                             icon.source: "image://theme/icon-s-setting"
+ 
+                             onClicked: {
+-                                favoriteSettingsLoader.showEventsSettings()
++                                favoriteSettingsLoader.showSettings()
+                             }
+                         }
+                     }
+
+--- /usr/share/lipstick-jolla-home-qt5/eventsview/FavoriteSettingsLoader.qml.orig	2017-11-26 16:44:13.273346709 +0100
++++ /usr/share/lipstick-jolla-home-qt5/eventsview/FavoriteSettingsLoader.qml	2017-11-26 16:45:07.278163752 +0100
+@@ -28,6 +28,10 @@
+         settingsDbus.call("showEventsSettings", [])
+     }
+ 
++    function showSettings() {
++        settingsDbus.call("showSettings", [])
++    }
++
+     DBusInterface {
+         id: settingsDbus
+ 

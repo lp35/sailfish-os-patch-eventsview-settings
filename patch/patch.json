@@ -1,0 +1,8 @@
+{
+    "name": "Replace eventsview setting by general settings",
+    "description": "Force the little cog settings in EventsView to redirect to general settings isntead of events view settings.",
+    "category": "homescreen",
+    "infos": {
+        "maintainer": "lp35"
+    }
+}
